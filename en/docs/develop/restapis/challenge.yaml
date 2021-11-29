@@ -114,8 +114,7 @@ paths:
         - me
       summary: Answer new challenge question combination over existing answers.
       operationId: updateChallengeAnswersOfLoggedInUser
-      description: 
-        $ref: try.md 
+      description: ''
         <b>Permission required:</b>
          * /permission/admin/login
       parameters:
