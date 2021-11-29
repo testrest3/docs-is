@@ -167,7 +167,7 @@ paths:
         - me
       summary: Answers a specific new challenge.
       operationId: addChallengeAnswerOfLoggedInUser
-      description: |
+      description: 
         $ref: /try.md
 
         <b>Permission required:</b>
