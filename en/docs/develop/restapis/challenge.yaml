@@ -115,7 +115,7 @@ paths:
       summary: Answer new challenge question combination over existing answers.
       operationId: updateChallengeAnswersOfLoggedInUser
       description: |
-        Overrides the *already answered challenges* in the system with a set of *new challenge question answers* for logged In user. A user can pick at maximum one question from each set to answer. A user may answer **one or more distinct** challenge question **sets**.
+        $ref: /try.md
 
         <b>Permission required:</b>
          * /permission/admin/login
@@ -167,8 +167,7 @@ paths:
         - me
       summary: Answers a specific new challenge.
       operationId: addChallengeAnswerOfLoggedInUser
-      description: 
-        $ref: /try.md 
+      description: add description test 
         <b>Permission required:</b>
          * /permission/admin/login
       parameters:
