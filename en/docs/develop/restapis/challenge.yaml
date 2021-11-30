@@ -30,9 +30,10 @@ paths:
       tags:
         - me
       summary: Retrieve challenges available for the authenticated user.
-      operationId: getChallengesForLoggedInUser
       description: 
-        $ref: ./try.md 
+        $ref: ./try.md
+      operationId: getChallengesForLoggedInUser
+ 
       parameters:
         - $ref: '#/parameters/limitQueryParam'
         - $ref: '#/parameters/offsetQueryParam'
