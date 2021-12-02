@@ -67,8 +67,7 @@ paths:
       parameters:
         - in: body
           name: challengeAnswer
-          description: 
-            $ref: ./try.md
+          description: challenge answer 
           schema:
             type: array
             items:
@@ -338,7 +337,8 @@ definitions:
       questionSetId:
         type: string
         example: challengeQuestionSet1
-        description: A unique ID to identify the challenge set.
+        description: 
+          $ref: ./try.md
       challengeQuestion:
           $ref: '#/definitions/ChallengeQuestion'
           description: A challenge question that is selected to answer from the set.
