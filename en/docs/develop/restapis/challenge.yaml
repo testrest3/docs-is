@@ -1,7 +1,6 @@
 swagger: '2.0'
 info:
-  description: 
-    $ref: ./try.md
+  description: Some description.
   version: "v1"
   title: WSO2 Identity Server - User's Challenge Questions and Answers API Definition.
   contact:
@@ -62,8 +61,8 @@ paths:
       summary: Answer to a collection of new challenges.
       operationId: addChallengeAnswersForLoggedInUser
       description: |
-        Provide answer(s) to one or more candidate challenge question set(s) available in the system for the authenticated user. A user can pick at maximum one question from each set to answer. A user may answer **one or more distinct** challenge question **set(s)**.
-
+        $ref: ./try.md
+        
         <b>Permission required:</b>
          * /permission/admin/login
       parameters:
