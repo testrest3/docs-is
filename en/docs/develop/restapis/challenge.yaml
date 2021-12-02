@@ -42,8 +42,7 @@ paths:
         - $ref: '#/parameters/offsetQueryParam'
       responses:
         200:
-          description: 
-            $ref: This
+          description: This is a response. 
           schema:
             type: array
             items:
