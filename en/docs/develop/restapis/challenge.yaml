@@ -61,7 +61,7 @@ paths:
       summary: Answer to a collection of new challenges.
       operationId: addChallengeAnswersForLoggedInUser
       description: |
-        $ref: ./try.md
+        $ref: /try.md
         
         <b>Permission required:</b>
          * /permission/admin/login
