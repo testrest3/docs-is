@@ -1,6 +1,7 @@
 swagger: '2.0'
 info:
-  description: This is the RESTful API for managing challenge questions and answers of a user in WSO2 Identity Server
+  description: 
+    $ref: ./try.md
   version: "v1"
   title: WSO2 Identity Server - User's Challenge Questions and Answers API Definition.
   contact:
@@ -42,7 +43,7 @@ paths:
       responses:
         200:
           description: 
-            $ref: ./try.md
+            $ref: This
           schema:
             type: array
             items:
