@@ -32,7 +32,7 @@ paths:
       summary: Retrieve challenges available for the authenticated user.
       operationId: getChallengesForLoggedInUser
       description: |
-        $ref: /try.md
+        Retrieves the available challenges in the system for the authenticated user. In the response, challenge questions are grouped as **challenge sets**.
 
         <b>Permission required:</b>
          * /permission/admin/login
@@ -41,7 +41,8 @@ paths:
         - $ref: '#/parameters/offsetQueryParam'
       responses:
         200:
-          description: All the available challenges in the system that can be answered by the user.
+          description: 
+            $ref: ./try.md
           schema:
             type: array
             items:
