@@ -60,15 +60,15 @@ paths:
         - me
       summary: Answer to a collection of new challenges.
       operationId: addChallengeAnswersForLoggedInUser
-      description: |
-        $ref: /try.md
+      description: something random
         
         <b>Permission required:</b>
          * /permission/admin/login
       parameters:
         - in: body
           name: challengeAnswer
-          description: One or more challenge(s) with the answer.
+          description: 
+            $ref: ./try.md
           schema:
             type: array
             items:
