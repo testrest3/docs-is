@@ -32,7 +32,7 @@ paths:
       summary: Retrieve challenges available for the authenticated user.
       operationId: getChallengesForLoggedInUser
       description:
-        $ref: ./try.md
+        $ref: /try.md
 
         <b>Permission required:</b>
          * /permission/admin/login
