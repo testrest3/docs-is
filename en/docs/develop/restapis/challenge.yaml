@@ -17,7 +17,8 @@ schemes:
 # Tags are used for organizing operations
 tags:
 - name: me
-  description: Operations for the authenticated user.
+  description: 
+    $ref: ./try.md
 
 # Applicable authentication mechanisms
 security:
