@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  description: Description1
+  description: This is the RESTful API for managing challenge questions and answers of a user in WSO2 Identity Server
   version: "v1"
   title: WSO2 Identity Server - User's Challenge Questions and Answers API Definition.
   contact:
@@ -30,10 +30,12 @@ paths:
       tags:
         - me
       summary: Retrieve challenges available for the authenticated user.
-      description: 
-        $ref: ./try.md
       operationId: getChallengesForLoggedInUser
- 
+      description: |
+        Retrieves the available challenges in the system for the authenticated user. In the response, challenge questions are grouped as **challenge sets**.
+
+        <b>Permission required:</b>
+         * /permission/admin/login
       parameters:
         - $ref: '#/parameters/limitQueryParam'
         - $ref: '#/parameters/offsetQueryParam'
@@ -112,7 +114,9 @@ paths:
         - me
       summary: Answer new challenge question combination over existing answers.
       operationId: updateChallengeAnswersOfLoggedInUser
-      description: ''
+      description: |
+        Overrides the *already answered challenges* in the system with a set of *new challenge question answers* for logged In user. A user can pick at maximum one question from each set to answer. A user may answer **one or more distinct** challenge question **sets**.
+
         <b>Permission required:</b>
          * /permission/admin/login
       parameters:
@@ -163,7 +167,9 @@ paths:
         - me
       summary: Answers a specific new challenge.
       operationId: addChallengeAnswerOfLoggedInUser
-      description: add description test 
+      description: |
+        Provide an **answer** to **a specific challenge** in the system for a logged in user. The user can at the most select one question from a challenge set of interest.
+
         <b>Permission required:</b>
          * /permission/admin/login
       parameters:
